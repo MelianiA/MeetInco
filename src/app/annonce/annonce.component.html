@@ -1,0 +1,26 @@
+<div class="container"> 
+    <br>
+    <div class="row">   
+        <div *ngFor="let a of annonces" class="col-sm-3">  
+            <div  class="card my-card-bis">
+                <div class="card-head"> 
+                    <img src="assets/Images/2.png" alt="photo-profil" width="50%">
+                      
+                   <span class="annonce-num">&nbsp;
+                        <i class="fas fa-mobile-alt"></i> 
+                          0645254152 
+                    </span>                    
+                 </div>
+                <div class="card-body">
+                    <span class="annonce-nom"> Thor 
+
+                    </span>
+                    <span class="annonce-info">
+                        {{a}}
+                    </span>
+                </div>
+              </div>
+        </div>  
+
+    </div>
+</div>

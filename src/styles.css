@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+.title_perso{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+    text-shadow: 1px 1px #619fda;
+}
+
+.my-card{
+    box-shadow: 0px 0px 0px darkgrey !important
+}
+.my-card-bis{
+    box-shadow: 0 19px 38px rgb(0,0,0,0.30) !important
+}
+
+.annonce-nom{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orangered;
+    letter-spacing: 4px;
+}
+
+.annonce-info{
+    color:  steelblue ;
+    letter-spacing: 0.5px;
+    font-size: small;
+}
+
+.annonce-num{
+    font-family:'Courier New', Courier, monospace
+}
+
+.annonce-num{
+    color: darkgray;
+}
