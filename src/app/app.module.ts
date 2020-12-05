@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AnnonceComponent } from './annonce/annonce.component'
-
+import { HttpClientModule } from '@angular/common/http'
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { AnnonceComponent } from './annonce/annonce.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnnonceComponent implements OnInit {
 
-  annonces  =['Pour la vie','Faire connaissance','Je m\'ennuie'];
-  constructor() { }
+  annonces : any ;
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+
+    this.http.get('http://localhost:8085/annonces').subscribe(data=> {
+      this.annonces=data;
+    },err=>{
+      console.log(err);
+    });
   }
 
 }
